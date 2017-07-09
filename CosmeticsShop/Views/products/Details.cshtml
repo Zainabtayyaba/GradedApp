@@ -1,0 +1,67 @@
+﻿@model CosmeticsShop.Models.product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.catId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.catId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category.catName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.catName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.prodId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
